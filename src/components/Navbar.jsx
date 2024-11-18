@@ -3,6 +3,7 @@ import {navItems} from '../constants'
 import { ArrowDownRight } from 'lucide-react';
 import { Menu, X} from 'lucide-react'
 import { useState } from 'react';
+import { Search } from 'lucide-react';
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState (false);
@@ -17,7 +18,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center'>
             {/* Nav Logo */}
             <div>
-              <img src={Logo} alt="DSL Logo" />
+              <img className='w-20' src={Logo} alt="DSL Logo" />
             </div>
             {/* NavMenu */}
             <div>
